@@ -26,7 +26,7 @@ However, some decisions that we made at the beginning of the project ended up ca
 Our initial concept of creating static HTML pages for register, login, and user profile began causing issues when we began to institute user authorization. Although initially it seemed like this would be an easier path - users would only see the React app if they successfully logged in, it turned out that these would have worked better if they were created as components. Trying to rectify this late in the projekt required us to create new components and reorganize much of our app. 
 
 ### Wireframes and ERDs:
-<!-- imgur links -->
+[<img src="http://imgur.com/zP6xUbN"">](Wireframe)
 
 
 ### Special Thanks
