@@ -15,7 +15,7 @@ const landingRouter   = require('./routes/landing/landing.js');
 const expressJWT      = require ('express-jwt');
 const jwt             = require('jsonwebtoken'); //(and this line maybe in auth.js too?)
 
-const PORT            = process.argv[2] || process.env.port || 3000;
+const PORT            = process.argv[2] || process.env.PORT || 3000;
 const secret          = 10;
 
 app.use(logger('dev'));
