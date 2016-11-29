@@ -1,5 +1,5 @@
 'use strict'
-// require('dotenv').config({ silent: true });
+require('dotenv').config({ silent: true });
 const session         = require('express-session');
 const cookieParser    = require('cookie-parser');
 const bodyParser      = require('body-parser');
