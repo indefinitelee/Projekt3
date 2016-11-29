@@ -17,15 +17,6 @@ header li {
   padding: 0 10px 0 10px;
 }
 
-.search-bar {
-  background-color: #393939;
-  padding: 10px;
-}
-
-.search-bar input {
-  margin-left: 40px;
-  width: 350px;
-}
 header {
   background-color: #393939;
   padding: 20px;
@@ -51,8 +42,7 @@ iframe {
   border: none;
   width: 50%;
   height: 500px;
-  margin-top: 15px;
-
+  margin-right: 0px;
 }
 
 /*.event-display {

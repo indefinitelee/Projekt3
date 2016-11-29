@@ -30,7 +30,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Parses application/JSON
 app.use(bodyParser.json());
 
-app.use(expressJWT({ secret: 'proyekt3' }).unless({ path: ['/', '/login', '/register', '/landing']}));
+// app.use(expressJWT({ secret: 'proyekt3' }).unless({ path: ['/', '/login', '/register', '/landing']}));
 
 app.listen(PORT, () => { console.log('Ja zees app is listening, just like KGB')});
 
