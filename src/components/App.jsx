@@ -263,9 +263,9 @@ class App extends Component {
         <header>
           <h1>PR<span>ʞ</span>⅄EKT.Ɛ</h1>
           <ul>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/register">Register</a></li>
-            <li><a href="/profile">Profile</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Profile</a></li>
           </ul>
 
         </header>
@@ -290,7 +290,7 @@ class App extends Component {
           eventCity={this.state.eventCity}
         />
 
-        <Register
+        {/*<Register
           signUpUsername={this.state.signup.username}
           signUpPassword={this.state.signup.password}
           updateFormUsername={event => this.updateFormSignUpUsername(event)}
@@ -304,7 +304,7 @@ class App extends Component {
           updateFormUsername={event => this.updateFormLogInUsername(event)}
           updateFormPassword={event => this.updateFormLogInPassword(event)}
           handleUser={() => this.handleLogIn()}
-        />
+        /> */}
 
       </div>
     );

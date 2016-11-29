@@ -17,7 +17,7 @@ class Nav extends Component {
           onChange={this.props.handleUpdateSearch}
          />
         <button onClick={this.props.handleSubmitSearch}>Submit</button>
-        <button onClick={this.props.handleFormSubmit}>Like</button>
+        <button className="like" onClick={this.props.handleFormSubmit}>Like</button>
       </div>
     );
   }

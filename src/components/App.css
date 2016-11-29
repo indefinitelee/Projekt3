@@ -4,76 +4,96 @@
 span {
   text-transform: uppercase;
 }
-
 header a {
   text-decoration: none;
   color: #FAFAFA;
   padding: 0 10px 0 10px;
 }
-
 header li {
+  position: relative;
   list-style: none;
   float: left;
-  padding: 0 10px 0 10px;
+  padding: 0 3px 0 3px;
+  left: 75vw;
 }
-
-header {
+  header {
   background-color: #393939;
+  width: 100vw;
   padding: 20px;
 }
-
-header h1 {
+  header h1 {
   color: #FA99FA;
   margin: 0;
   font-family: sans-serif;
   padding-left: 20px;
 }
-
 ul {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
 iframe {
   position: absolute;
   left: 1vw;
   display: inline;
   padding-left: 30px;
   border: none;
-  width: 50%;
-  height: 500px;
+  width: 55vw;
+  height: 63vh;
   margin-right: 0px;
+  top: 21vh;
+  border: 1px solid grey;
+ box-shadow: 7px 7px 5px 0px rebeccapurple;
+
 }
-
-/*.event-display {
-  display: inline-block;
-  margin: 0 auto;
-  border: 2px solid black;
-  padding: 1em;
-  width: 400px;
-  height: 500px;
-  background-color: cyan;
-}*/
-
-/*.event-display img {
-  max-height: 250px;
-  display: block;
-  margin: 0 auto;
-}*/
-
 #event-item {
   position: absolute;
   padding: 10px;
   top: 20vh;
   left: 65vw;
   color: white;
+  width: 24vw;
+  text-align: center;
   background-color: #393939;
   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
-
 #event-item a {
   color: white;
   font-size: 1.2em;
   /*background-color: grey;*/
+}
+
+.search-bar {
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  height: 5vh;
+  width: auto;
+}
+
+.search-bar > input {
+  height: 4vh;
+  width: 15vw;
+  border: none;
+  font-size: 18px;
+}
+
+button {
+  position: relative;
+  height: 3vh;
+  width: auto;
+  border-radius: 4px;
+  border: none;
+  padding: 0 10px 0 10px;
+}
+
+  .like {
+  position: absolute;
+  top: 83vh;
+  right: 3vw;
+}
+
+.video-container > img {
+  position: absolute;
+  width: 10px;
 
 }
