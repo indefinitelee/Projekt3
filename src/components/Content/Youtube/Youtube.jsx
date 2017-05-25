@@ -6,7 +6,7 @@ import style from '../../App.css';
 class Youtube extends Component {
 
 showvideo(props) {
-  let videoSrc = `http://www.youtube.com/embed/${this.props.videoID}?autoplay=0&rel=&modestbranding=1`
+  let videoSrc = `https://www.youtube.com/embed/${this.props.videoID}?autoplay=0&rel=&modestbranding=1`
   return(
     <iframe
     className="player"
