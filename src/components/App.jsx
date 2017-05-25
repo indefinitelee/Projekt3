@@ -33,7 +33,7 @@ class App extends Component {
         password: ''
       },
       login: {
-        loggedIn: false,
+        loggedIn: true,
         username: '',
         password: ''
       }
@@ -258,8 +258,34 @@ class App extends Component {
    }
 
   render(){
+   if (this.state.login.loggedIn === false){
     return (
       <div id="app-container">
+        <header>
+
+        </header>
+
+        <Register
+          signUpUsername={this.state.signup.username}
+          signUpPassword={this.state.signup.password}
+          updateFormUsername={event => this.updateFormSignUpUsername(event)}
+          updateFormPassword={event => this.updateFormSignUpPassword(event)}
+          handleUser= {(e) => this.handleSignUp(e)}
+        />
+        <Login
+          className={this.state.login.loggedIn ? 'hidden' : ''}
+          logInUsername={this.state.login.username}
+          logInPassword={this.state.login.password}
+          updateFormUsername={event => this.updateFormLogInUsername(event)}
+          updateFormPassword={event => this.updateFormLogInPassword(event)}
+          handleUser={() => this.handleLogIn()}
+        />
+       </div>
+      );
+
+   } else {
+      return
+       <div id="app-container">
         <header>
           <h1>PR<span>ʞ</span>⅄EKT.Ɛ</h1>
           <ul>
@@ -267,7 +293,6 @@ class App extends Component {
             <li><a href="#">Register</a></li>
             <li><a href="#">Profile</a></li>
           </ul>
-
         </header>
         <Nav
           searchTerm={this.state.searchTerm}
@@ -289,23 +314,7 @@ class App extends Component {
           eventVenue={this.state.eventVenue}
           eventCity={this.state.eventCity}
         />
-
-        {/*<Register
-          signUpUsername={this.state.signup.username}
-          signUpPassword={this.state.signup.password}
-          updateFormUsername={event => this.updateFormSignUpUsername(event)}
-          updateFormPassword={event => this.updateFormSignUpPassword(event)}
-          handleUser= {(e) => this.handleSignUp(e)}
-        />
-        <Login
-          className={this.state.login.loggedIn ? 'hidden' : ''}
-          logInUsername={this.state.login.username}
-          logInPassword={this.state.login.password}
-          updateFormUsername={event => this.updateFormLogInUsername(event)}
-          updateFormPassword={event => this.updateFormLogInPassword(event)}
-          handleUser={() => this.handleLogIn()}
-        /> */}
-
+      }
       </div>
     );
   }
