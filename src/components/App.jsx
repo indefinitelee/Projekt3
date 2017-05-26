@@ -89,7 +89,6 @@ class App extends Component {
      .catch(err => console.log(err));
    }
 
-
   handleSubmitSearch() {
     // e.preventDefault();
     console.log("this.state.searchTerm is ", this.state.searchTerm)
@@ -280,11 +279,11 @@ class App extends Component {
           updateFormPassword={event => this.updateFormLogInPassword(event)}
           handleUser={() => this.handleLogIn()}
         />
-       </div>
+      </div>
       );
 
    } else {
-      return
+      return (
        <div id="app-container">
         <header>
           <h1>PR<span>ʞ</span>⅄EKT.Ɛ</h1>
@@ -314,9 +313,9 @@ class App extends Component {
           eventVenue={this.state.eventVenue}
           eventCity={this.state.eventCity}
         />
-      }
       </div>
     );
+    }
   }
 }
 export default App;
